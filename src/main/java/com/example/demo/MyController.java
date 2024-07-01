@@ -14,9 +14,10 @@ public class MyController {
         return "Get Request applied on /api/users";
     }
     @PostMapping("/users")
-//    public String handlePost(){
-//        return "Post Request applied on /api/users";
-//    }
+    public String handlePost(){
+        return "Post Request applied on /api/users";
+    }
+    @PostMapping("/upload")
     public String handlePost(@RequestBody UserData user){
         return "Post Request applied on /api/users"+"  ADDRESS : "+user.address +"   AGE : "+user.age+"  NAME : "+user.name;
     }
